@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            margin: 5px 0;
+        }
+
+        .box {
+            flex: 1;
+            border: 1px solid grey;
+            margin: 0 5px;
+        }
+
+        .box:nth-child(3) {
+            flex: 0.3;
+        }
+
+        .box:nth-child(4) {
+            flex: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="box">a</div>
+        <div class="box">b</div>
+    </div>
+    <div class="row">
+        <div class="box">c</div>
+        <div class="box">d</div>
+    </div>
+    <div class="row">
+        <div class="box">e</div>
+    </div>
+</body>
+
+</html>
